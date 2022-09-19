@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+     <!--항상 리셋 css파일이 가장 위에 링크되어 있어야 함-->
+    <link rel="stylesheet" href="css/sidmool.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/hammenu.js"></script>
+    <script src="js/slide.js"></script>
+    <script>
+            $(function(){
+                $("#topbtn").click(function(){
+       $("html,body").animate({scrollTop:0},'slow');
+       return false;
+     });
+            });
+        </script>
+    
+</head>
+<body>
+   <header>
+      <button class="hamburger">&#9776</button>
+      <ul>
+      <li><a href="loginform.html"><img class="e" src="mainimg/cart_icon.png" alt="mypage"></a></li>
+      <li><a href="loginform.html"><img class="s" src="mainimg/login_icon.png" alt="login"></a></li>
+      <li><a href="loginform.html"><img class="d" src="mainimg/mypage_icon.png" alt="mypage"></a></li>
+      </ul>    
+  </header>
+      
+  <center><div class="fixed cf">
+  <h1><a href="mobilemain.html"><img src="mainimg/main_logo.png" alt="logo"></a></h1>
+  </div></center>
+
+   <nav class="menu">
+    <ul>
+        <li class="color"><a href="#">마이페이지<img src="mainimg/arrow-down.png" alt="menu"></a>
+         <ul class="sub">
+            <li><a href="loginform.html">회원정보변경</a></li>
+            <li><a href="loginform.html">장바구니</a></li>
+         </ul>
+        </li>
+
+        <li class="color"><a href="#">PRODUCT<img src="mainimg/arrow-down.png" alt="menu"></a>
+            <ul class="sub">
+               <li><a href="productpage.html">신상품</a></li>
+               <li><a href="productpage.html">기능별 제품</a></li>
+                <li><a href="productpage.html">피부타입별 제품</a></li>
+                <li><a href="productpage.html">성분별 제품</a></li>
+            </ul>
+           </li>
+
+           <li class="color"><a href="#">EVENT<img src="mainimg/arrow-down.png" alt="menu"></a>
+            <ul class="sub">
+               <li><a href="event.html">진행중 이벤트</a></li>
+               <li><a href="#">지난 이벤트</a></li>
+            </ul>
+           </li>
+
+           <li class="color"><a href="#">NOTICE<img src="mainimg/arrow-down.png" alt="menu"></a>
+            <ul class="sub">
+               <li><a href="#">공지사항</a></li>
+               <li><a href="#">배송안내</a></li>
+            </ul>
+           </li>
+
+           <li class="color"><a href="#">고객센터<img src="mainimg/arrow-down.png" alt="menu"></a>
+            <ul class="sub">
+               <li><a href="loginform.html">1:1 문의</a></li>
+               <li><a href="sidmool.html">QnA 게시판</a></li>
+            </ul>
+           </li>
+
+           <li class="color"><a href="#">시드물 스토리<img src="mainimg/arrow-down.png" alt="menu"></a>
+            <ul class="sub">
+               <li><a href="sidmool.html">시드물 소개</a></li>
+               <li><a href="sidmool.html">성분 백과사전</a></li>
+               <li><a href="sidmool.html">CONTACT US</a></li>
+            </ul>
+           </li>
+
+    </ul>
+    <button class="cross">&#735;</button>
+   </nav>
+
+   <div id="line">
+      <div class="search-box">	
+          <input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+          <a class="search-btn" href="#">
+            <img src="mainimg/search_icon.png" alt="search">
+          </a>
+        </div>
+     </div>
+
+   <section>
+      <img src="mainimg/001.jpg" alt="sidmool story">
+      <img src="mainimg/002.jpg" alt="sidmool story">
+      <img src="mainimg/company_info_img04.png" alt="sidmool story">
+      <img src="mainimg/company_info_img05.png" alt="sidmool story">
+      <img src="mainimg/003.jpg" alt="sidmool story">
+     
+   </section>
+
+   <footer>
+    <div id="footer">
+       <h2><img src="mainimg/main_logo.png" alt="logo"></h2>
+       <ul class="fnav cf">
+           <li><a href="#">고객센터</a></li>
+           <li><a href="#">이용안내</a></li>
+           <li><a href="#">미확인입금</a></li>
+           <li><a href="#">PC 버전</a></li>
+       </ul>
+    </div>
+
+
+    <div class="last">
+    <p id="sns"><img src="mainimg/sns.png" alt="sns"></p>
+    <p class="info1">상호 : 주식회사 시드물 <br>사업자등록번호 : 305-81-94469</p>
+ <p class="info2">건강기능식품판매업 : 대전 중구 제503 <br>통신판매업신고번호 제2008-대전중구-0247호 <br>
+     화장품 제조판매업 등록필증 제 1163호 </p>
+  <address>우)35083 대전광역시 중구 안영로42(안영동)</address>
+    <p class="tt">Copyright &copy; SAMPLE co.,Ltd.All rights reserved</p>
+
+    <p class="text">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다.
+       홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.
+    </p>
+   </div>
+   </footer>
+
+   <div id="topbtn">
+      <img src="mainimg/topicon.png" alt="top button">
+    </div>
+</body>
+</html>

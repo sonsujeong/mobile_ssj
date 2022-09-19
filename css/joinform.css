@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body {width: 80%; margin: 40px auto;text-decoration: none;
+    font-family: 'pretendard_bold'; color: #4b774a;
+      padding: 40px;text-align: center  !important;
+      overflow: hidden;}
+header h1{text-align: center;margin: 0 auto;}
+header h1 img {width: 50%;max-width: 200px;}
+
+#line {width: 100%; border-bottom: 2px solid #4b774a; 
+        margin: 0 auto; margin-bottom: 40px;}
+.joinus {text-align: center;margin: 40px auto;}
+.joinus h2 {font-size: 1.5rem; color: #4b774a;}
+
+.login .fix {text-align: center; margin: 0 auto;
+           margin-left: -100px;}
+.login .fix li label {font-size: 1.1rem;color: #4b774a;font-weight: bold;
+                   margin-right: 10px; width: 100px;display: inline-block;}
+.login .fix li input {width: 200px; height: 30px;border: 1px solid #4b774a;
+                 border-radius: 4px; padding: 0;box-sizing: border-box;}
+.login .fix li {padding: 0 0 7px 0;}
+.login .fix li a {width: 80px; height: 30px;}
+ 
+
+form { width: 100%; margin: 0 auto; text-align: center; }
+form ul li {font-size: 18px; margin: 10px 0; height: 25px;} 
+.id2 img {width: 80px; height: 30px;}
+
+#id3 {font-size:10px; color: #000;}
+
+.agree {margin: 30px auto; width: 450px;}
+.agree input {float: left; display: inline-block; margin-right: 8px;
+              margin-left: 50px;}
+.agree label {float: left; }
+
+
+button {border: none; background: transparent; cursor: pointer;}
+#button {margin-top: 20px;}
+.btn img { width: 160px; height: 42px; display: inline-block;
+         margin-left: 0;}
+.back img {width: 100px; height: 42px;display: inline-block;}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+     <!--항상 리셋 css파일이 가장 위에 링크되어 있어야 함-->
+    <link rel="stylesheet" href="css/joinform.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header>
+    <h1><a href="mobilemain.html"><img src="mainimg/main_logo.png" alt="로고이미지"></a></h1>
+  </header>
+
+  <div id="line"></div>
+   
+
+   <div class="joinus">
+    <h2>회원가입</h2>
+   </div>
+  <form class="cf" name="join_in" method="post" action="insert.php">
+    <fieldset>
+      <legend class="skip">회원가입</legend>
+      <div class="login cf">
+        <ul class="cf fix">
+          <li><label for="id">아이디</label>
+            <input type="text" maxlength="11" id="id" name="id" 
+                  class="id6" placeholder=" 영문,숫자5~11자" >
+          </li>
+
+          <li class="id2">
+            <a href="#">
+              <img src="mainimg/confirm_icon.png" alt="confirm">
+            </a>
+          </li>
+
+         <li><label for="pw">비밀번호</label>
+          <input type="password" id="pw" name="pw" minlength="8" placeholder=" 비밀번호를 입력해주세요 "></li>
+
+         <li><label for="pw2">*</label>
+          <input type="password" id="pw2" name="pw2" placeholder=" 비밀번호 재입력"></li>
+
+          <li><label for="username">이름</label>
+            <input type="text" id="username" name="username" placeholder=" Username"></li>
+
+            <li><label for="pnumber">휴대폰</label>
+              <input type="tel" id="pnumber" name="pnumber" placeholder=" Phone Number"></li>
+
+              <li><label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder=" E-Mail"></li>
+                <div id="id3">*이메일은 계정 분실 시 본인인증 정보로 활용됩니다</div>
+        </ul>
+
+        <div class="agree">
+          <input type="checkbox" class="css-checkbox" id="chk1">
+           <label for="chk1">[필수] 개인정보 수집 및 이용동의</label><br>
+           <input type="checkbox" class="css-checkbox" id="chk2">
+           <label for="chk2">[필수] 시드물 이용약관</label><br>
+           <input type="checkbox" class="css-checkbox" id="chk3">
+           <label for="chk3">[필수] 만 14세 미만 가입제한</label><br>
+           <input type="checkbox" class="css-checkbox" id="chk4">
+           <label for="chk4">[선택] 마케팅 활용 및 광고성 정보 수신 동의</label>
+         </div>
+
+        </div>
+    </fieldset>
+    <div id="button">
+      <button type="submit" value="joinin" class="btn">
+        <img src="mainimg/joinin_icon.png" alt="본인인증 후 가입하기">
+      </button>
+      <button type="reset" value="cancel" class="back">
+        <img src="mainimg/back_icon.png" alt="돌아가기">
+      </button>
+    </div>
+  </form>
+</body>
+</html>

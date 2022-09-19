@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing: border-box; font-family: 'pretendard_regular'}
+a {text-decoration: none; color: #000;}
+body {padding-top: 10px;}
+
+header {width: 100%; top: 0; position:fixed;left: 0;top: 0;
+        background: #fff;height: 45px;z-index: 10000; }
+       
+.fixed {margin-top: 70px;}        
+.fixed h1 {margin: 0 auto;}
+.fixed h1 img {width: 50%; margin: 0 auto; max-width: 200px;}
+
+.s {position: absolute; top: 9px; right: 1%;cursor: pointer;width: 6%;
+    } 
+.d {position: absolute;top: 9px; right: 6.8%; width: 6%;margin-right: 15px;}       
+.e {position: absolute;top: 9px; right: 17%; width: 6%;margin-right: 13px;}
+
+.search-box{
+    position: absolute;
+    right:0;
+    background: #FFF;
+    height: 40px;
+    border-radius: 10px;}
+.search-box a img {width: 70%;}
+.search-box:hover > .search-txt {
+    width: 180px;
+    padding:0 6px;
+    border: 1px solid #4b774a;
+    border-radius: 10px;}
+
+.search-box:hover > .search-btn {
+    background: white;
+    color: #4b774a;
+    }
+
+.search-btn{
+    color:#4b774a;
+    float: right; 
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;}
+
+.search-txt {
+   border : none;
+    background : none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;}
+
+.hamburger {background: none; position: absolute; left: 0;top: 0;
+         line-height: 45px; padding: 0 10px; color: #4b774a;border: 0;
+         font-size: 1.8rem; font-weight: bold; cursor: pointer
+         ;outline: none; }
+
+.cross {background: none; position: absolute; right: 0; top: 8px;
+     color: #fff;border: 0; line-height: 45px;font-weight: normal;cursor: pointer;
+   outline: none; z-index: 100000;font-size: 3rem;}
+      
+      
+      .menu {z-index: 100000;font-weight: bold; font-size: 1rem;height: 100%;
+            background: #d9d9d9; position: fixed; width: 250px;top:2.8rem;
+            left: -280px; }
+      
+      .menu ul {margin: 0;padding: 0;padding-top: 30px;height: 100%;font-weight: bold;}
+      
+      .menu li {padding: 10px 0; position: relative; text-indent: 30px; }
+      .menu ul li a {color: #4b774a;}
+      .menu li img {position: absolute; right: 10px;}
+      
+      
+      
+            
+      .sub {text-align: center; font-size: 0.8rem;
+           display: none;}
+      .sub li {padding: 0;}
+      .sub li a {padding: 3px 0; display: block;}      
+      .sub a:hover {background: #8e8e8e; color: #fff;}      
+
+
+#line {width: 95%; margin: 0 auto;
+      height: 50px;border-bottom: 2px solid #4b774a;
+      position: relative;}        
+
+#main_img {width: 100%; position: relative; overflow: hidden; margin-top: 20px;}
+/*밑의 absolute의 부모 relative*/
+#main_img ul {position: relative; left: 0; width: 400%; margin: 0 auto;} 
+/*총 4장이므로 400%지정,여기 relative로 제이쿼리 옆으로 미는 작업*/
+#main_img ul li {float: left; width: 25%;} /*li는 100%기준으로 작성*/
+#main_img ul li img {width: 100%;}
+ /*크게 깨지지 않는 범위에서 높이 주기(반응형)*/
+
+.prev {position: absolute; top: 47%;left: 0; z-index: 9999;}
+.next {position: absolute; top: 47%; right: 0; z-index: 9999;}
+
+#book_roll {text-align: center; margin-top: 20px;}
+#book_roll li {display: inline-block;}
+
+#best h2 {color: #4b774a; font-size: 1.5rem;text-align: center;margin-bottom: 15px;
+          margin-top: 50px;}
+#best {margin-bottom: 40px;}          
+.line2 {width: 180px ;border: 1px solid #4b774a; margin: 0 auto; margin-bottom: 30px;}
+
+span {display: block;}
+.text {font-weight: bold;}
+section {width: 100%;}
+
+#pro1 ul li {width: 50%; float: left; text-align: center;}
+#pro1 ul li img {width: 90%; max-width: 90%;}
+#pro1 ul li span {font-size: 0.8rem;}
+
+#pro1 .top {margin-top: 7%;}
+
+#mdpick {width: 95%; margin: 0 auto; 
+    margin-bottom: 90px;}
+article {width: 100%;}
+#mdpick h2 {color: #4b774a; font-size: 1.5rem;
+           text-align: center;margin-bottom: 15px;
+            margin-top:70px;}
+
+.line3 {width: 180px ;border: 1px solid #4b774a; margin: 0 auto; margin-bottom: 30px;}
+ 
+.promo ul li {width: 50%; float: left; text-align: center;}
+.promo ul li img {width: 90%; max-width: 95%;}
+
+.circle a {position: relative;display: block;}
+.circle {position: relative; margin-top: 20px;}
+
+.circle p {font-size: 1.8rem;
+         letter-spacing: 10px;
+      font-weight: bold; text-align: center;
+         margin: 0 auto;}
+.circle a .cover{color: #fff;opacity: 0;
+              position: absolute; left: 50%;top: 50%;
+              transform: translate(-50%,-50%);}        
+
+.md li a:before {content: ""; position: absolute; 
+    left: 5%; top: 0; border-radius: 50%;
+    width: 90%; height: 100%; 
+     background: #000; opacity: 0;}
+
+.md li a:hover:before {opacity: 0.6;}
+.md li:hover .cover { opacity: 1;}
+
+.summer_ban {width: 100%; margin-top: 40px;}
+.summer_ban img {width: 100%;vertical-align: bottom;}
+
+footer {width: 100%;margin: 0 auto;}
+
+footer h2 {text-align: center;margin-top: 100px;
+            margin-bottom: 70px;}
+footer h2 img {width: 40%;}
+
+
+.fnav {width: 100%; text-align: center;
+    margin: 10px auto;}
+.fnav li {width: 25%;float: left;background: #4b774a;
+         height: 30px;line-height: 30px;
+         border-top: 1px solid #d9d9d9;
+         border-left: 1px solid #d9d9d9;
+         border-bottom: 1px solid #d9d9d9;}
+.fnav li:last-child {border-right: 1px solid #d9d9d9;}         
+.fnav li a {color: #fff;}
+
+
+.info1 {font-size: 14px;}
+.last {text-align: center !important;}
+#sns {margin: 15px auto; }
+
+.text {margin-top: 20px;width: 80%; margin: 0 auto;
+    font-size: 15px;}
+.tt {margin-top: 20px;}
+
+#topbtn {position: fixed; bottom: 80px;right: 10px;width: 11%;
+    cursor: pointer;}
+#topbtn img{width: 100%;}
